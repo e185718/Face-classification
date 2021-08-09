@@ -1,5 +1,7 @@
 '''arashi_imageファイルにある画像をOpenCVで顔を検出し、切り出すプログラム。
 顔の検出にはOpenCVのデフォルトの分類器(https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)を使用する。
+
+作成者  185718F
 '''
 import cv2, os, re,requests, time, bs4
 from urllib.request import urlretrieve
@@ -35,7 +37,6 @@ def main(member):
         cv2.imwrite(face_path  + "/" + str(index)+".jpg", img)
         
 if __name__ == "__main__":
-    """
     _,member = sys.argv
     main(member)
     """
@@ -45,3 +46,4 @@ if __name__ == "__main__":
         main(member[i])
     end = time.time()
     print("Finished in {} seconds.".format(end-start))
+    """

@@ -1,3 +1,7 @@
+"""arashi_imageファイルにある画像をOpenCVで顔を検出し、切り出すプログラムである、img_collection.pyを並列処理する。
+
+作成者  185725J
+"""
 import time
 from pathlib import Path
 import cv2

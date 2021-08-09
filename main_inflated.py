@@ -1,3 +1,7 @@
+"""画像の水増しを行うプログラムである、inflated.pyを並列処理する。
+
+作成者  185725J
+"""
 import time
 from pathlib import Path
 import cv2

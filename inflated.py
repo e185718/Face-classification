@@ -1,5 +1,7 @@
 '''画像の水増しを行うプログラム。
 学習画像を垂直方向への反転、90度回転、270度回転、グレー化、ヒストグラムの変更を行うことで画像の水増しを実行する。
+
+作成者  185718F
 '''
 import cv2, os, re,requests, time, bs4
 from urllib.request import urlretrieve
