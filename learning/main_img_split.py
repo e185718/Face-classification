@@ -1,3 +1,8 @@
+"""
+FaceEditedフォルダにある画像の２割をテストフォルダに移行するプログラムである、img_split.pyを並列処理する。
+
+作成者 185725J, 185718F(8:2)
+"""
 import time
 from pathlib import Path
 import cv2

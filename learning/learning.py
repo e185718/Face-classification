@@ -1,5 +1,7 @@
 '''モデルを作成し、kerasでモデルを構築し、VGG16をFine-tuningしてモデルの学習を行うプログラム。
 Fine-tuningは、学習済モデルを、重みデータを一部再学習して特徴量抽出機として利用する学習方法である。
+
+作成者　185718F
 '''
 import os
 from tensorflow.keras.applications.vgg16 import VGG16
@@ -92,7 +94,7 @@ if not os.path.exists(result_dir):
     os.mkdir(result_dir)
 
 # 重みを保存
-vgg_model.save_weights(os.path.join(result_dir, 'Weight8.h5'))
+vgg_model.save_weights(os.path.join(result_dir, 'Weight.h5'))
 
 # 作成したモデルを保存
 #vgg_model.save('VGGtake.h5')

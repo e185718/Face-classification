@@ -1,4 +1,6 @@
 '''FaceEditedフォルダにある画像の２割をテストフォルダに移行するプログラム。
+
+作成者  185718F
 '''
 import shutil
 import random
@@ -16,7 +18,6 @@ def main(member):
         shutil.move(str(in_jpg[t]), "./Test/"+member)
 
 if __name__ == "__main__":
-    """   
     _,member = sys.argv
     main(member)
     """
@@ -26,4 +27,5 @@ if __name__ == "__main__":
         main(member[i])
     end = time.time()
     print("Finished in {} seconds.".format(end-start))
+    """   
  

@@ -1,5 +1,7 @@
 '''モデルの重みを読み込み、画像を識別テストするプログラム。
 learning.pyで学習させたモデルの重みを読み込んでtest_sampleの中のfaceフォルダの中の画像を識別する。
+
+作成者　185718F
 '''
 import os
 from tensorflow.keras.applications.vgg16 import VGG16
@@ -67,6 +69,3 @@ for index, file in enumerate(test,1):
 	print(type(file))
 	img_predict(file)
 	
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod(verbose=True)
